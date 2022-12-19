@@ -69,34 +69,12 @@ kill -9 SID_DE_SESION ENTER
 o usar el archivo Kill que se encuentra dentro de la carpeta del socket
 
 
-#Ruta con los script para subir la base de datos o bajarla en el server 44.5
-/u01/app/oracle/admin/BDSG01/scripts
-#Script sube_bd.sh
-export ORACLE_SID=BDSG01;
-lsnrctl start
-sqlplus /nolog << EOF
-conn / as sysdba
-startup open 
-exit
-EOF
-#Script baja_bd.sh
-export ORACLE_SID=BDSG01;
-sqlplus /nolog << EOF
-conn / as sysdba
-shutdown immediate 
-exit
-EOF
-lsnrctl stop
-
-#Configurar TNS de oracle despues de clonada una maquina
-/u01/app/oracle/product/11.2.0/db_1/network/admin/listener.oracle
-/u01/app/oracle/product/11.2.0/db_1/network/admin/tnsnames.ora
 
 #Copiar archivo desde servidor remoto por SSH
-scp oracle@x.x.x.x:/data/backup/BDBL325_.dmp /data/backup
+scp oracle@x.x.x.x:/data/backup/BDDL725_.dmp /data/backup
 
 #MONTAR CARPETA COMPARTIDA
-sudo mount x.x.x.x:/nfs_log_sgm /usr/SGM_log/nfs_log_sgm
+sudo mount x.x.x.x:/nfs_log_sgm /usr/SDM_log/nfs_log_sgm
 vi /etc/fstab
 x.x.x.x:/nfs_dockers /media/bkdocker                  nfs    defaults        1 0
 
