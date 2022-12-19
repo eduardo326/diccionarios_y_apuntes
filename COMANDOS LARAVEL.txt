@@ -1,0 +1,7 @@
+php artisan make:controller Directorio/UserController
+php artisan make:model Modelos/Territorio
+
+php artisan make:migration create_categories_table
+
+
+php artisan make:controller Tienda/ProductosController

@@ -1,0 +1,47 @@
+git init 						#Crea un repositorio
+git status 						#Indica si hay archivos con cambios
+git add archivo.extencion 		#Para añadir el archivo para hacer commit
+git add .				 		#Para añadir todo los archivos del proyecto para hacer commit
+git commit -m "Mi comentario"	#Para hacer commit
+git log							#Para mirar los commit que se han realizado
+git diff						#Para mirar los cambios que se han realizado sobre los archivos
+git commit --amend				#Para modificar el ultimo commit anterior
+git checkout -- archivo.extencion				#Para desahacer modificaciones de un archivo
+git checkout master								#Nos lleva al ultimo commit
+git checkout codigocommit						#Nos lleva al commit que corresponde al codigo indicado
+git reset HEAD archivo.extencion				#Para sacar un archivo del staged (desahcer el que se hace con add)
+git log --oneline								#Para listar todos los commits con sus codigos
+git log --oneline --decorate					#Para listar todos los commits con sus codigos
+git log --oneline --decorate --all --graph		#Para listar todos los commits con sus codigos
+git reset codigocommit							#Desahace el commit que corresponde al codigo indicado.
+git reset HEAD archivo						#Quita un archivo del staged, para no tenerlo en cuenta en el proximo commit.
+git reset --hard codigocommit					#Deshace el commit completamente en un solo paso.
+git reset --soft codigocommit					#Deshace el commit y deja los cambios en el staged.
+git reset --mixed codigocommit					#Deshace el commit y deja los cambios fuera del staged.
+
+MANIPULACION DE RAMAS
+
+git branch								#Muestra la lista de ramas que tenemos creadas
+git branch	nuevarama					#Crea una nueva rama
+git checkout nuevarama					#Permite cambiarnos a la rama indicada
+git checkout -b nuevarama				#Permite crear una rama y cambiarnos a ella
+git branch -m mirama nuevonombre		#Permite renombrar una rama
+git branch -d mirama					#Elimina una rama
+
+git add .								#Indica que se metan todos los archivos que he modificado al siguiente commit
+
+git merge ramaafucionar  #para funcionar una rama con otra, para que esto funcine debemos primero estar ubicados en la rama destino
+
+
+
+
+
+
+CONTINUO DESDE LA CLASE 11
+
+git remote add origin https://github.com/NiconDevTeam/proyectox.git
+git push -u origin master
+git fetch origin 
+
+git pull
+git pull origin nombrerama
