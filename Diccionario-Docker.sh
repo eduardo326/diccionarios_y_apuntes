@@ -84,12 +84,6 @@ docker-compose build #Recontruye todas las imagenes
 docker-compose down -v #Elimina los contenedores y las redes
 
 
-#SIMS
-winpty docker run -it -p 3009:3009 -p 3010:3010 -p 3082:3082 -p 3083:3083 -p 3005:3005 -p 3006:3006 -p 3007:3007 -p 3008:3008 -p 3017:3017 -p 8227:8227 --name sims_app supergiros/sims_app:v1.6
-
-
-
-
 ##COMANDO PARA DESPLEGA WAR SIN SERVER DE APLICACIONES
 /home/jhipster # cat entrypoint.sh
 #!/bin/sh
