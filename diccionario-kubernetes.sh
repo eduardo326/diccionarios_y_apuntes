@@ -137,3 +137,8 @@ minikube service nombreServicio --url -n nombreNamespace #Consultar la ip y puer
 kubectl get ingress/ingress-2048 -n game-2048
 
 kubectl get ingress -n prod-front
+
+
+#Cambiar de cluster Kubernetes al local
+kubectl config get-contexts
+kubectl config use-context docker-desktop

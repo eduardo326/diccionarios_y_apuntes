@@ -32,6 +32,9 @@ git add .								#Indica que se metan todos los archivos que he modificado al si
 
 git merge ramaafucionar  #para funcionar una rama con otra, para que esto funcine debemos primero estar ubicados en la rama destino
 
+git remote -v #Listas los repositorios remotos configurados
+git help
+
 
 
 
@@ -45,3 +48,25 @@ git fetch origin
 
 git pull
 git pull origin nombrerama
+
+
+git checkout -b produccion origin/produccion
+
+
+git remote remove origin
+
+
+#Git HUB
+…or create a new repository on the command line
+echo "# front-api-rest-01-angular" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/eduardo326/front-api-rest-01-angular.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/eduardo326/front-api-rest-01-angular.git
+git branch -M main
+git push -u origin main
