@@ -87,3 +87,9 @@ route add defalut gw x.x.x.x
 
 rsync --remove-source-files -avzhe ssh --progress --exclude 'app.log' userapp@x.x.x.x:/v1app/server/log/ /usr/GM_log/nfs_log/SERVER >> /home/userapp/rsync/SERVER.log
 
+
+rm test.txt 		#Elimina un documento
+rmdir directorio	#Elmina un carpeta vacia
+rm -rf directorio	#Elimina carpeta con archivos y subcarpetas
+
+tree	#Muestra un arbol con el contenido del directorio actual.
