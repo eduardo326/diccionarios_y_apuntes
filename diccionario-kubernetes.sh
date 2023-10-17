@@ -8,8 +8,6 @@ minikube service ingress-nginx -n ingress-nginx --url
 minikube service eureka -n prod-back --url
 minikube dashboard
 
-
-
 kubectl describe node mikube  ## Mestra de talles de un nodo memoria, cpu, etc...
 
 ##SOLUCION ERROR Exiting due to HOST JUJU LOCK PERMISSION
@@ -140,5 +138,5 @@ kubectl get ingress -n prod-front
 
 
 #Cambiar de cluster Kubernetes al local
-kubectl config get-contexts
+kubectl config get-contexts 				#Consultar los cluster configurados en el local.
 kubectl config use-context docker-desktop
