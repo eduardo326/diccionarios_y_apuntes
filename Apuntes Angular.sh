@@ -1,3 +1,6 @@
+# instalar npm en un proyecto
+npm install npm@10.2.1
+
 #Crear componente por consola
 
 #component

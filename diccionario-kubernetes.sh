@@ -8,6 +8,9 @@ minikube service ingress-nginx -n ingress-nginx --url
 minikube service eureka -n prod-back --url
 minikube dashboard
 
+# Ver pod desde mi local
+kubectl port-forward pod/nombrepod -n namespace puertolocal:puertopod
+
 kubectl describe node mikube  ## Mestra de talles de un nodo memoria, cpu, etc...
 
 ##SOLUCION ERROR Exiting due to HOST JUJU LOCK PERMISSION

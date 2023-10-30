@@ -93,3 +93,7 @@ rmdir directorio	#Elmina un carpeta vacia
 rm -rf directorio	#Elimina carpeta con archivos y subcarpetas
 
 tree	#Muestra un arbol con el contenido del directorio actual.
+
+##Ver ip a partir de una url
+
+nslookup miurl.com

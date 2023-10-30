@@ -7,6 +7,8 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 #Borrar todas la imagenes
 docker rmi $(docker images -a -q)
+#Borrar imagenes que no estan en uso
+docker image prune -f
 
 docker system df ##Ver espacio usado por volumenes, imagenes y contenedores
 
